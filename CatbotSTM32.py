@@ -19,9 +19,9 @@ power_mgmt_1 = 0x6b
 power_mgmt_2 = 0x6c
 try:
          # STM32F091RCT6  M0 microcontroller     
-   hardware  = pyfirmata.Arduino("/dev/ttyACM0",57600)  # The hardware connection on the STM32 board on the catbot  
+   hardware  = pyfirmata.ArduinoMega("/dev/ttyACM0")  # The hardware connection on the STM32 board on the catbot  
          # STM32F303k8t6
-   hardware3 = pyfirmata.Arduino("/dev/ttyACM1",57600)  # 
+   hardware3 = pyfirmata.Arduino("/dev/ttyACM1")   
 except: 
     print("Catbot Hardware serial connection fail !")
    # pwm pins setup 
